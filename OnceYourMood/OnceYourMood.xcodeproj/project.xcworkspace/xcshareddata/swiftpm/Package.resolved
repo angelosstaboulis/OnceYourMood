@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SimpleCheckbox",
+        "repositoryURL": "https://github.com/BeauNouvelle/SimpleCheckbox.git",
+        "state": {
+          "branch": null,
+          "revision": "96cf25c98bd8e595018df6a2466a9a1eb348fdb8",
+          "version": "2.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
