@@ -2,7 +2,11 @@
 I made this simple iOS app in SwiftUI to show how animation is works 
 
 
+https://github.com/angelosstaboulis/OnceYourMood/assets/79055304/a628abfc-b5e2-46e6-b806-a410c2337de6
 
-Uploading Simulator Screen Recording - iPhone 15 Pro - 2024-06-10 at 10.30.13.mp4…
+
+
+
+
 
 
