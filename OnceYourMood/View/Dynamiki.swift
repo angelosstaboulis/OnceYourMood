@@ -15,10 +15,17 @@ struct Dynamiki: View {
             .frame(width:UIScreen.main.bounds.width,height:UIScreen.main.bounds.height - 90,alignment: .top)
             .overlay(content: {
                 Image("ungry").onReceive(timer, perform: { value in
-                    valueAnimation = valueAnimation + 1
+                   createEffect()
                 }).rotationEffect(.degrees(valueAnimation))
-                .animation(.easeInOut, value: valueAnimation)
+                .animation(.linear, value: valueAnimation)
             }).ignoresSafeArea()
+    }
+    func createEffect(){
+        if valueAnimation < 30 {
+            valueAnimation = valueAnimation + 1
+        }else{
+            valueAnimation = 0
+        }
     }
 }
 

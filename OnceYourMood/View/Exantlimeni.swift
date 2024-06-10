@@ -16,13 +16,18 @@ struct Exantlimeni: View {
             Image("exantlimenh").resizable() 
                 .overlay(content: {
                     Image("ungry").onReceive(timer, perform: { value in
-                        valueAnimation.toggle()
+                        createEffect()
                     })
-                    .offset(x: valueAnimation ? -3 : 3, y: valueAnimation ? -3 : 3)
+                    .offset(y: valueAnimation ? 0 : -80)
+                    .animation(.interpolatingSpring(stiffness: 350, damping: 5, initialVelocity: 10))
+
                 })
                 .frame(width:UIScreen.main.bounds.width,height:UIScreen.main.bounds.height - 90,alignment: .top)
                 .ignoresSafeArea()
         }
+    }
+    func createEffect(){
+        valueAnimation.toggle()
     }
 }
 

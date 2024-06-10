@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-            Apatimeni(valueAnimation: 0)
+            Apatimeni(valueAnimation: 0, scale: .zero)
                 .tabItem {
                     Image("heart")
                     Text("Απατημένη")
