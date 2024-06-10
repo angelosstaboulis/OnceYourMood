@@ -25,7 +25,7 @@ struct ContentView: View {
                     Image("heart")
                     Text("Εκνευρισμένη")
                 }
-            Exantlimeni(valueAnimation: false)
+            Exantlimeni(animationValue: false)
                 .tabItem {
                     Image("heart")
                     Text("Εξαντηλμένη")

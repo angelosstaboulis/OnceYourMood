@@ -9,16 +9,16 @@ import SwiftUI
 
 struct Exantlimeni: View {
     @State var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    @State var valueAnimation:Bool
+    @State var animationValue:Bool
 
     var body: some View {
         VStack{
             Image("exantlimenh").resizable() 
                 .overlay(content: {
                     Image("ungry").onReceive(timer, perform: { value in
-                        createEffect()
+                        animationValue = Helper.shared.createDynamikiEffect(valueAnimation: 0, scale: .zero, animation: animationValue, mood: .Exantlimeni).2
                     })
-                    .offset(y: valueAnimation ? 0 : -80)
+                    .offset(y: animationValue ? 0 : -80)
                     .animation(.interpolatingSpring(stiffness: 350, damping: 5, initialVelocity: 10))
 
                 })
@@ -26,11 +26,9 @@ struct Exantlimeni: View {
                 .ignoresSafeArea()
         }
     }
-    func createEffect(){
-        valueAnimation.toggle()
-    }
+    
 }
 
 #Preview {
-    Exantlimeni(valueAnimation: false)
+    Exantlimeni(animationValue: false)
 }

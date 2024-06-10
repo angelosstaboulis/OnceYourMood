@@ -15,7 +15,7 @@ struct Ekneurismeni: View {
             Image("ekneurismeni").resizable() 
                 .overlay(content: {
                     Image("ungry").onReceive(timer, perform: { value in
-                       createEffect()
+                        valueAnimation = Helper.shared.createDynamikiEffect(valueAnimation: valueAnimation, scale: .zero, animation: false, mood: .Ekneurismeni).0
                     }).rotationEffect(.degrees(valueAnimation))
                     .animation(.spring, value: valueAnimation)
                     
@@ -24,13 +24,7 @@ struct Ekneurismeni: View {
                 .ignoresSafeArea()
         }
     }
-    func createEffect(){
-        if valueAnimation < 360 {
-            valueAnimation = valueAnimation + 1
-        }else{
-            valueAnimation = 0
-        }
-    }
+   
 }
 
 #Preview {

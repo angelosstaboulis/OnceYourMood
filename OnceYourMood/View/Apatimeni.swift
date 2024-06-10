@@ -16,7 +16,9 @@ struct Apatimeni: View {
             Image("apatimeni").resizable() 
                 .overlay(content: {
                     Image("ungry").onReceive(timer, perform: { value in
-                       createEffect()
+                        valueAnimation = Helper.shared.createDynamikiEffect(valueAnimation: valueAnimation, scale: scale, animation: false, mood: .Apatimeni).0
+                        scale = Helper.shared.createDynamikiEffect(valueAnimation: valueAnimation, scale: scale, animation: false, mood: .Apatimeni).1
+                        
                         
                     })
                     .scaleEffect(scale, anchor: .center)
@@ -26,15 +28,7 @@ struct Apatimeni: View {
                 .ignoresSafeArea()
         }
     }
-    func createEffect(){
-        if valueAnimation < 1.5 {
-            valueAnimation = valueAnimation + 0.1
-            scale = .init(width: valueAnimation, height: valueAnimation)
-        }else{
-            valueAnimation = 0
-            scale = .init(width: valueAnimation, height: valueAnimation)
-        }
-    }
+  
 }
 
 #Preview {

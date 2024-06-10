@@ -19,6 +19,7 @@
 		D67390112C163907005C84D8 /* Ekneurismeni.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67390102C163907005C84D8 /* Ekneurismeni.swift */; };
 		D67390132C163953005C84D8 /* Exantlimeni.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67390122C163953005C84D8 /* Exantlimeni.swift */; };
 		D67390152C16421A005C84D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67390142C16421A005C84D8 /* LaunchScreen.storyboard */; };
+		D6A99A8D2C16E37C00DCA80A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A99A8C2C16E37C00DCA80A /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		D67390102C163907005C84D8 /* Ekneurismeni.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ekneurismeni.swift; sourceTree = "<group>"; };
 		D67390122C163953005C84D8 /* Exantlimeni.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exantlimeni.swift; sourceTree = "<group>"; };
 		D67390142C16421A005C84D8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6A99A8C2C16E37C00DCA80A /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		D6738FE02C1636B7005C84D8 /* OnceYourMood */ = {
 			isa = PBXGroup;
 			children = (
+				D6A99A8B2C16E36C00DCA80A /* Helper */,
 				D673900F2C1638DC005C84D8 /* View */,
 				D6738FE12C1636B7005C84D8 /* OnceYourMoodApp.swift */,
 				D6738FE32C1636B7005C84D8 /* ContentView.swift */,
@@ -148,6 +151,14 @@
 				D67390122C163953005C84D8 /* Exantlimeni.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D6A99A8B2C16E36C00DCA80A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D6A99A8C2C16E37C00DCA80A /* Helper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D67390132C163953005C84D8 /* Exantlimeni.swift in Sources */,
+				D6A99A8D2C16E37C00DCA80A /* Helper.swift in Sources */,
 				D6738FE42C1636B7005C84D8 /* ContentView.swift in Sources */,
 				D6738FE22C1636B7005C84D8 /* OnceYourMoodApp.swift in Sources */,
 				D673900C2C1637EF005C84D8 /* Apatimeni.swift in Sources */,
